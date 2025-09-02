@@ -1,0 +1,17 @@
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demo_GL_C#\HelloTriangle\bin\x64\Release\netcoreapp3.1\triangle.frag
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demo_GL_C#\HelloTriangle\bin\x64\Release\netcoreapp3.1\triangle.vert
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demo_GL_C#\HelloTriangle\bin\x64\Release\netcoreapp3.1\HelloTriangle.exe
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demo_GL_C#\HelloTriangle\bin\x64\Release\netcoreapp3.1\HelloTriangle.deps.json
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demo_GL_C#\HelloTriangle\bin\x64\Release\netcoreapp3.1\HelloTriangle.runtimeconfig.json
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demo_GL_C#\HelloTriangle\bin\x64\Release\netcoreapp3.1\HelloTriangle.runtimeconfig.dev.json
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demo_GL_C#\HelloTriangle\bin\x64\Release\netcoreapp3.1\HelloTriangle.dll
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demo_GL_C#\HelloTriangle\bin\x64\Release\netcoreapp3.1\HelloTriangle.pdb
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demo_GL_C#\HelloTriangle\obj\x64\Release\netcoreapp3.1\HelloTriangle.GlfwNet.Strings.resources
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demo_GL_C#\HelloTriangle\obj\x64\Release\netcoreapp3.1\HelloTriangle.csproj.GenerateResource.cache
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demo_GL_C#\HelloTriangle\obj\x64\Release\netcoreapp3.1\HelloTriangle.AssemblyInfoInputs.cache
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demo_GL_C#\HelloTriangle\obj\x64\Release\netcoreapp3.1\HelloTriangle.AssemblyInfo.cs
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demo_GL_C#\HelloTriangle\obj\x64\Release\netcoreapp3.1\HelloTriangle.csproj.CoreCompileInputs.cache
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demo_GL_C#\HelloTriangle\obj\x64\Release\netcoreapp3.1\HelloTriangle.dll
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demo_GL_C#\HelloTriangle\obj\x64\Release\netcoreapp3.1\HelloTriangle.pdb
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demo_GL_C#\HelloTriangle\obj\x64\Release\netcoreapp3.1\HelloTriangle.genruntimeconfig.cache
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demo_GL_C#\HelloTriangle\obj\x64\Release\netcoreapp3.1\HelloTriangle.GeneratedMSBuildEditorConfig.editorconfig

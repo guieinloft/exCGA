@@ -1,0 +1,96 @@
+﻿  glslprogram.cpp
+  GLUtils.cpp
+  TextureManager.cpp
+  main.cpp
+  TessellatedQuad.cpp
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\utils\GLUtils.cpp(10,68): warning C4100: 'param': parâmetro formal não referenciado
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\utils\GLUtils.cpp(10,27): warning C4100: 'length': parâmetro formal não referenciado
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec2.hpp(64,22): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem src\TessellatedQuad.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec2.hpp(242,3): message : consulte a referência à instanciação 'glm::tvec2<T,P>' do modelo da classe que está sendo compilada (compilando arquivo de origem src\TessellatedQuad.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec2.hpp(65,22): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem src\TessellatedQuad.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec2.hpp(66,22): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem src\TessellatedQuad.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec3.hpp(64,25): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem src\TessellatedQuad.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec3.hpp(264,3): message : consulte a referência à instanciação 'glm::tvec3<T,P>' do modelo da classe que está sendo compilada (compilando arquivo de origem src\TessellatedQuad.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec3.hpp(65,25): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem src\TessellatedQuad.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec3.hpp(66,25): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem src\TessellatedQuad.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec2.hpp(64,22): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem ..\..\utils\glslprogram.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec2.hpp(242,3): message : consulte a referência à instanciação 'glm::tvec2<T,P>' do modelo da classe que está sendo compilada (compilando arquivo de origem ..\..\utils\glslprogram.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec2.hpp(65,22): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem ..\..\utils\glslprogram.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec2.hpp(66,22): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem ..\..\utils\glslprogram.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec4.hpp(118,28): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem src\TessellatedQuad.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec4.hpp(364,3): message : consulte a referência à instanciação 'glm::tvec4<T,P>' do modelo da classe que está sendo compilada (compilando arquivo de origem src\TessellatedQuad.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec4.hpp(119,29): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem src\TessellatedQuad.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec4.hpp(120,29): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem src\TessellatedQuad.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec3.hpp(64,25): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem ..\..\utils\glslprogram.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec3.hpp(264,3): message : consulte a referência à instanciação 'glm::tvec3<T,P>' do modelo da classe que está sendo compilada (compilando arquivo de origem ..\..\utils\glslprogram.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec3.hpp(65,25): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem ..\..\utils\glslprogram.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec3.hpp(66,25): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem ..\..\utils\glslprogram.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec4.hpp(118,28): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem ..\..\utils\glslprogram.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec4.hpp(364,3): message : consulte a referência à instanciação 'glm::tvec4<T,P>' do modelo da classe que está sendo compilada (compilando arquivo de origem ..\..\utils\glslprogram.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec4.hpp(119,29): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem ..\..\utils\glslprogram.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec4.hpp(120,29): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem ..\..\utils\glslprogram.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec2.hpp(64,22): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem src\main.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec2.hpp(242,3): message : consulte a referência à instanciação 'glm::tvec2<T,P>' do modelo da classe que está sendo compilada (compilando arquivo de origem src\main.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec2.hpp(65,22): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem src\main.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec2.hpp(66,22): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem src\main.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec3.hpp(64,25): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem src\main.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec3.hpp(264,3): message : consulte a referência à instanciação 'glm::tvec3<T,P>' do modelo da classe que está sendo compilada (compilando arquivo de origem src\main.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec3.hpp(65,25): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem src\main.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec3.hpp(66,25): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem src\main.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec4.hpp(118,28): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem src\main.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec4.hpp(364,3): message : consulte a referência à instanciação 'glm::tvec4<T,P>' do modelo da classe que está sendo compilada (compilando arquivo de origem src\main.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec4.hpp(119,29): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem src\main.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec4.hpp(120,29): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem src\main.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\utils\glslprogram.h(56,34): warning C4100: 'other': parâmetro formal não referenciado (compilando arquivo de origem src\TessellatedQuad.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\utils\glslprogram.h(57,45): warning C4100: 'other': parâmetro formal não referenciado (compilando arquivo de origem src\TessellatedQuad.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\utils\glslprogram.h(56,34): warning C4100: 'other': parâmetro formal não referenciado (compilando arquivo de origem ..\..\utils\glslprogram.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\utils\glslprogram.h(57,45): warning C4100: 'other': parâmetro formal não referenciado (compilando arquivo de origem ..\..\utils\glslprogram.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\utils\glslprogram.h(56,34): warning C4100: 'other': parâmetro formal não referenciado (compilando arquivo de origem src\main.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\utils\glslprogram.h(57,45): warning C4100: 'other': parâmetro formal não referenciado (compilando arquivo de origem src\main.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\demos\glsl40_tessellation_displacement_mapping\src\main.cpp(54,24): warning C4100: 'error': parâmetro formal não referenciado
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\demos\glsl40_tessellation_displacement_mapping\src\main.cpp(60,30): warning C4459: a declaração de 'window' oculta uma declaração global
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\demos\glsl40_tessellation_displacement_mapping\src\main.cpp(29,13): message : consulte a declaração de 'window'
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\demos\glsl40_tessellation_displacement_mapping\src\main.cpp(60,77): warning C4100: 'mods': parâmetro formal não referenciado
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\demos\glsl40_tessellation_displacement_mapping\src\main.cpp(60,51): warning C4100: 'scancode': parâmetro formal não referenciado
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\demos\glsl40_tessellation_displacement_mapping\src\main.cpp(133,50): warning C4316: 'TessellatedQuad': objeto alocado na pilha pode não estar alinhado 16
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': redefinição de macro (compilando arquivo de origem src\TessellatedQuad.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\GLFW\glfw3.h(85,1): message : consulte a definição anterior de 'APIENTRY' (compilando arquivo de origem src\TessellatedQuad.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec2.hpp(64,22): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem ..\..\utils\TextureManager.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec2.hpp(242,3): message : consulte a referência à instanciação 'glm::tvec2<T,P>' do modelo da classe que está sendo compilada (compilando arquivo de origem ..\..\utils\TextureManager.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec2.hpp(65,22): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem ..\..\utils\TextureManager.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec2.hpp(66,22): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem ..\..\utils\TextureManager.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec3.hpp(64,25): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem ..\..\utils\TextureManager.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec3.hpp(264,3): message : consulte a referência à instanciação 'glm::tvec3<T,P>' do modelo da classe que está sendo compilada (compilando arquivo de origem ..\..\utils\TextureManager.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec3.hpp(65,25): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem ..\..\utils\TextureManager.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec3.hpp(66,25): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem ..\..\utils\TextureManager.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec4.hpp(118,28): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem ..\..\utils\TextureManager.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec4.hpp(364,3): message : consulte a referência à instanciação 'glm::tvec4<T,P>' do modelo da classe que está sendo compilada (compilando arquivo de origem ..\..\utils\TextureManager.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec4.hpp(119,29): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem ..\..\utils\TextureManager.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\include\glm\detail\type_vec4.hpp(120,29): warning C4201: extensão não padrão usada: struct/union sem nome (compilando arquivo de origem ..\..\utils\TextureManager.cpp)
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\utils\TextureManager.cpp(182,11): warning C4244: '=': conversão de 'int' para 'T', possível perda de dados
+          with
+          [
+              T=float
+          ]
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\utils\TextureManager.cpp(183,11): warning C4244: '=': conversão de 'int' para 'T', possível perda de dados
+          with
+          [
+              T=float
+          ]
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\utils\TextureManager.cpp(117,145): warning C4100: 'border': parâmetro formal não referenciado
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\utils\TextureManager.cpp(117,132): warning C4100: 'level': parâmetro formal não referenciado
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\utils\TextureManager.cpp(117,109): warning C4100: 'internal_format': parâmetro formal não referenciado
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\utils\TextureManager.cpp(117,89): warning C4100: 'image_format': parâmetro formal não referenciado
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\demos\glsl40_tessellation_displacement_mapping\src\TessellatedQuad.cpp(74,37): warning C4100: 'deltaTime': parâmetro formal não referenciado
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\demos\glsl40_tessellation_displacement_mapping\src\TessellatedQuad.cpp(114,12): warning C4305: '+=': truncamento de 'double' para 'float'
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\demos\glsl40_tessellation_displacement_mapping\src\TessellatedQuad.cpp(120,12): warning C4305: '-=': truncamento de 'double' para 'float'
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\demos\glsl40_tessellation_displacement_mapping\src\TessellatedQuad.cpp(179,41): warning C4100: 'y': parâmetro formal não referenciado
+D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\demos\glsl40_tessellation_displacement_mapping\src\TessellatedQuad.cpp(179,34): warning C4100: 'x': parâmetro formal não referenciado
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflita com uso de outras bibliotecas; use /NODEFAULTLIB:library
+  glsl40_tessellation_displacement_mapping.vcxproj -> D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\bin\glsl40_tessellation_displacement_mapping.exe
+  compying shaders
+  D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\demos\glsl40_tessellation_displacement_mapping\shader\glsl40_tess_disp_mapp.frag
+  D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\demos\glsl40_tessellation_displacement_mapping\shader\glsl40_tess_disp_mapp.tcs
+  D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\demos\glsl40_tessellation_displacement_mapping\shader\glsl40_tess_disp_mapp.tes
+  D:\ufsm\Disciplinas\Computacao Grafica Avancada\Demos\Demos_GL 4.x\demos\glsl40_tessellation_displacement_mapping\shader\glsl40_tess_disp_mapp.vert
+  4 arquivo(s) copiado(s)
