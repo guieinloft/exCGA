@@ -1,12 +1,6 @@
 /*
-	GLSL 4.x demo
-	Mostra o uso de:
-	-GLM - Math library
-	-VBO & VAO
-	-GL error detection
-	-glfwGetKeyOnce
-
-	May 2016 - Tiago Augusto Engel - tengel@inf.ufsm.br
+ * main.cpp
+ * virtualmente copiado da demo glsl40_plane, por Tiago Augusto Engel
 */
 
 //#define GLEW_STATIC
@@ -21,15 +15,15 @@
 #include <cstdio>
 #include <string>
 #include <iostream>
-#include "Plane.h"
+#include "Solids.h"
 #include "GlutSolids.h"
 
 
-#define WINDOW_WIDTH	1000
-#define WINDOW_HEIGHT	1000
+#define WINDOW_WIDTH	800
+#define WINDOW_HEIGHT	800
 
 
-Scene *plane;
+Scene* solids;
 GLFWwindow* window;
 bool wireframe = false;
 
@@ -39,7 +33,6 @@ char keyOnce[GLFW_KEY_LAST + 1];
 #define glfwGetKeyOnce(WINDOW, KEY) (glfwGetKey(WINDOW, KEY) ? (keyOnce[KEY] ? false : (keyOnce[KEY] = true)) : (keyOnce[KEY] = false))
 
 
-
 void mainLoop()
 {
 	double thisTime;
@@ -47,22 +40,24 @@ void mainLoop()
 	do
 	{
 		// toggle wireframe
-		if (glfwGetKeyOnce(window, 'Q')){
+		if (glfwGetKeyOnce(window, 'W')){
 			wireframe = !wireframe;
 			if (wireframe){
-				glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+				glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 			}
 			else{
-				glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+				glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 			}
 		}
 
 		// set deltatime and call update
 		thisTime = glfwGetTime();
-		plane->update(thisTime - lastTime);
+		solids->update(thisTime - lastTime);
+		// std::cout << 1.0/(thisTime - lastTime) << std::endl;
 		lastTime = thisTime;
 
-		plane->render();
+
+		solids->render();
 
 		glfwSwapBuffers(window);
 		//Get and organize events, like keyboard and mouse input, window resizing, etc...  
@@ -146,10 +141,11 @@ int main(void)
 
 	glutSolidsInit();
 
-	plane = new Plane(window, 1);
-	plane->init();
+	solids = new Solids(window, 1);
+	solids->init();
 
-	std::cout << std::endl << "Q: wireframe" << std::endl;
+	std::cout << std::endl << "W: wireframe" << std::endl;
+	std::cout << std::endl << "1-4: alterna entre cenas" << std::endl;
 
 	mainLoop();
 

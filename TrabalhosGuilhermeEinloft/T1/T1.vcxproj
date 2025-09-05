@@ -22,17 +22,17 @@
     <ClCompile Include="..\utils\glslprogram.cpp" />
     <ClCompile Include="src\GlutSolids.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\Plane.cpp" />
+    <ClCompile Include="src\Solids.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\GlutSolids.h" />
-    <ClInclude Include="src\Plane.h" />
+    <ClInclude Include="src\Solids.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="shader\glsl40_plane.frag">
+    <None Include="shader\t1.frag">
       <FileType>Document</FileType>
     </None>
-    <None Include="shader\glsl40_plane.vert">
+    <None Include="shader\t1.vert">
       <FileType>Document</FileType>
     </None>
   </ItemGroup>

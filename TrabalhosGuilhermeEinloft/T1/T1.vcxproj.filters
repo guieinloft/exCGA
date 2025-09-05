@@ -2,19 +2,19 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\Plane.cpp" />
+    <ClCompile Include="src\Solids.cpp" />
     <ClCompile Include="..\utils\glslprogram.cpp" />
     <ClCompile Include="src\GlutSolids.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Plane.h" />
+    <ClInclude Include="src\Solids.h" />
     <ClInclude Include="src\GlutSolids.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="shader\glsl40_plane.frag">
+    <None Include="shader\t1.frag">
       <Filter>shaders</Filter>
     </None>
-    <None Include="shader\glsl40_plane.vert">
+    <None Include="shader\t1.vert">
       <Filter>shaders</Filter>
     </None>
   </ItemGroup>
