@@ -14,6 +14,8 @@
     <ClCompile Include="Canvas2D\glslprogram.cpp">
       <Filter>Canvas</Filter>
     </ClCompile>
+    <ClCompile Include="dft.cpp" />
+    <ClCompile Include="signal.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector2.h" />
@@ -29,6 +31,8 @@
     <ClInclude Include="Canvas2D\glslprogram.h">
       <Filter>Canvas</Filter>
     </ClInclude>
+    <ClInclude Include="dft.h" />
+    <ClInclude Include="signal.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\arial.csv">

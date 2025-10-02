@@ -71,10 +71,11 @@ void CV::init(int w, int h, const char* title, bool antiAliasing)
 void initGlfw(int w, int h, const char* title, bool antiAliasing) {
     if (!glfwInit()) {
         // get error description
-        const char* description;
-        glfwGetError(&description);
+        //const char* description;
+        //glfwGetError(&description);
         // print error description
-        printf("Error: %s\n", description);
+        //printf("Error: %s\n", description);
+        printf("deu pau\n");
         exit(EXIT_FAILURE);
     }
 

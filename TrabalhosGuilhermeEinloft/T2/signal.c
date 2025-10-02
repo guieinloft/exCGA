@@ -9,7 +9,7 @@ struct signal *load_signal(const char *path)
 	struct signal *s = (struct signal *)malloc(sizeof(struct signal));
 	s->size = 0;
 	FILE *file = fopen(path, "r");
-	while (fscanf(file, "%f %f", &x_temp, &y_temp) != EOF)
+	while (fscanf_s(file, "%f %f", &x_temp, &y_temp) != EOF)
 		s->size += 1;
 	fseek(file, 0, SEEK_SET);
 	s->x = (float *)malloc(sizeof(float) * s->size);
@@ -31,7 +31,7 @@ struct signal *load_signal(const char *path)
 	s->freq_XY = (float *)malloc(sizeof(float) * s->size);
 
 	for (int i = 0; i < s->size; i++) {
-		fscanf(file, "%f %f", &s->x[i], &s->y[i]);
+		fscanf_s(file, "%f %f", &s->x[i], &s->y[i]);
 	}
 
 	fclose(file);
