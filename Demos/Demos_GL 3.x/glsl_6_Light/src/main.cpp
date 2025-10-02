@@ -107,7 +107,7 @@ int main(int argc, char** argv)
     glutIdleFunc(display);
     glutKeyboardFunc(keyboard);
 
-    shader1 = new Glsl("glsl_6_Light\\src\\tex.vert", "glsl_6_Light\\src\\tex.frag");
+    shader1 = new Glsl("glsl_6_Light/src/tex.vert", "glsl_6_Light/src/tex.frag");
     shader1->setActive(true);
 
     init_gl();

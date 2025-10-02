@@ -218,9 +218,9 @@ void init()
    tt_retrato= new texture("textura do retrato");
    tt_mesa   = new texture("textura da mesa de madeira");
 
-   Bmp *image1 = new Bmp("gl_3_grafo_cena\\resources\\chao2.bmp");
-   Bmp *image2 = new Bmp("gl_3_grafo_cena\\resources\\foto.bmp");
-   Bmp *image3 = new Bmp("gl_3_grafo_cena\\resources\\mesa.bmp");
+   Bmp *image1 = new Bmp("gl_3_grafo_cena/resources/chao2.bmp");
+   Bmp *image2 = new Bmp("gl_3_grafo_cena/resources/foto.bmp");
+   Bmp *image3 = new Bmp("gl_3_grafo_cena/resources/mesa.bmp");
 
    //associa as imagens com as texturas
    tt_chao->bindTexture( image1 );

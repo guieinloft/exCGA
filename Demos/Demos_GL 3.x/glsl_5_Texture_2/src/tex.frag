@@ -10,11 +10,11 @@ varying float  y_coord;
 
 void main()
 {
-   vec2 pos1 = gl_TexCoord[0].st * 0.9 + alpha;
-   float disp = (texture2D(texture_1, pos1).r * 2 - 1) * 0.1;
-   vec2 pos0 = gl_TexCoord[0].st + disp;
-   vec3 cor = texture2D(texture_0, pos0).rgb;
-   
-   //gl_FragColor = texture2D(texture, position).rgba;
-   gl_FragColor = vec4(cor, 1);
+	vec2 coord = gl_TexCoord[0].st * 2.0 - 1.0;
+	float coord_dist = coord.x * coord.x + coord.y * coord.y;
+	float cont_size = 0.05;
+	if (coord_dist <= 1.0 && coord_dist >= 1.0 - cont_size)
+		gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);
+	else
+		gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
 }

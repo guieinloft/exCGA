@@ -1,6 +1,8 @@
 // simple toon fragment shader
 // www.lighthouse3d.com
 
+#version 130
+
 varying vec3 normal, lightDir;
 
 void main()

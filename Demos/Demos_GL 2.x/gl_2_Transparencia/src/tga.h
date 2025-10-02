@@ -95,9 +95,6 @@ int TGAImg::Load(char* szFilename)
   // Open the specified file
   fIn.open(szFilename,ios::binary);
 
-   if(fIn==NULL)
-    return IMG_ERR_NO_FILE;
-
   // Get file size
   fIn.seekg(0,ios_base::end);
   ulSize=fIn.tellg();

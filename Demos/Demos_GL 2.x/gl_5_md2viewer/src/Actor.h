@@ -69,14 +69,14 @@ public:
    {
       if( body != NULL  )
       {
-         body->Animate(frameStart, frameEnd, 0.01, &frameInterp, &frameCurr, true);
-         weapon->Animate(frameStart, frameEnd, 0.01, &frameInterp, &frameCurr, true);
+         body->Animate(frameStart, frameEnd, 0.05, &frameInterp, &frameCurr, true);
+         weapon->Animate(frameStart, frameEnd, 0.05, &frameInterp, &frameCurr, true);
          printf("\r%d", frameCurr);
       }
       if( weapon != NULL )
       {
-          body->Animate(frameStart, frameEnd, 0.01, &frameInterp, &frameCurr, true);
-         weapon->Animate(frameStart, frameEnd, 0.01, &frameInterp, &frameCurr, true);
+          body->Animate(frameStart, frameEnd, 0.05, &frameInterp, &frameCurr, true);
+         weapon->Animate(frameStart, frameEnd, 0.05, &frameInterp, &frameCurr, true);
       }
    }
 };

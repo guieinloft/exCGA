@@ -1,0 +1,73 @@
+#include <vector>
+#include <queue>
+#include "Canvas2D/gl_canvas2d.h"
+#include "dft.h"
+
+int screenWidth, screenHeight;
+
+float xre[8] = {100.f, 99.f, 0.f, -99.f, -100.f, -99.f, 0.f, 99.f};
+float xim[8] = {0.f, 99.f, 100.f, 99.f, 0.f, -99.f, -100.f, -99.f};
+float yre[8];
+float yim[8];
+float amp[8];
+float freq[8];
+float phase[8];
+float x = 0, y = 0;
+float x_temp = 0, y_temp = 0;
+std::vector<float> prev_x;
+std::vector<float> prev_y;
+float t = 0;
+
+void draw_epicycles(float *amp, float *freq, float *phase, int n, float t)
+{
+
+}
+
+void render() {
+	CV::clear(0, 0, 0);
+	CV::translate(400, 400);
+	x = y = x_temp = y_temp = 0.f;
+	CV::color(0.5, 0.5, 0.5);
+	for (int i = 0; i < 8; i++) {
+		x += amp[i] * cos(freq[i] * t + phase[i]);
+		y += amp[i] * sin(freq[i] * t + phase[i]);
+
+		CV::circle(x_temp, y_temp, amp[i], 16); 
+		CV::line(x_temp, y_temp, x, y);
+		x_temp = x;
+		y_temp = y;
+	}
+	prev_x.push_back(x);
+	prev_y.push_back(y);
+	CV::color(1, 1, 1);
+	if (t > 2 * M_PI - 0.1) {
+		prev_x.erase(prev_x.begin());
+		prev_y.erase(prev_y.begin());
+	}
+	for (int i = 0; i < prev_x.size() - 1; i++) {
+		CV::line(prev_x[i], prev_y[i],
+				prev_x[i + 1], prev_y[i + 1]);
+	}
+	t += 0.01;
+}
+
+void keyboard(int key) {
+}
+
+void keyboardUp(int key) {
+    //printf("Liberou a tecla: %c\n", key);
+}
+
+void mouse(int button, int state, int wheel, int direction, int x, int y)
+{
+    printf("Mouse button: %d, state: %d, wheel: %d, direction: %d, x: %d, y: %d\n", button, state, wheel, direction, x, y);
+}
+
+int main(void)
+{
+	cdft(xre, xim, yre, yim, 8);
+	siginfo(yre, yim, phase, amp, freq, 8);
+	print_dft_siginfo(yre, yim, phase, amp, freq, 8);
+	CV::init(1200, 600, "Canvas2D", true);
+	CV::run();
+}

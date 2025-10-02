@@ -1,6 +1,8 @@
 // simple toon vertex shader
 // www.lighthouse3d.com
 
+#version 130
+
 uniform vec3 lightSourcePos;
 
 varying vec3 normal, lightDir;

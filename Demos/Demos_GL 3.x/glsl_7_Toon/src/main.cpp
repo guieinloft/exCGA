@@ -24,8 +24,8 @@
 
 #include "glsl.h"
 
-#define SCREEN_X 500
-#define SCREEN_Y 500
+#define SCREEN_X 800
+#define SCREEN_Y 600
 
 Glsl *shader1, *shader2;
 
@@ -36,13 +36,13 @@ float ang = 0;
 
 float rx = 0, rz = 0;
 
+float abertura = 30.0;
+float znear  = 1;
+float zfar   = 20;
+float aspect = 1;
+
 void init_gl()
 {
-   float abertura = 45.0;
-   float znear  = 1;
-   float zfar   = 20;
-   float aspect = 1;
-
    glMatrixMode(GL_PROJECTION);
    glLoadIdentity( );
    gluPerspective(abertura, aspect, znear, zfar);
@@ -65,11 +65,11 @@ void display(void)
 
    //move a posicao da luz
    float x, z;
-   x = cos(ang);
-   z = sin(ang);
+   x = (cos(ang));
+   z = (sin(ang));
    u_lightPos[0] = x;
    u_lightPos[2] = z;
-   ang+=0.001;
+   ang+=0.01;
 
    glUniform3f(loc_u_light, u_lightPos[0], u_lightPos[1], u_lightPos[2]);
 
@@ -109,6 +109,15 @@ void MotionFunc(int x, int y)
    rz = y;
 }
 
+void reshape(GLint w, GLint h)
+{
+   glViewport(0, 0, w, h);
+   aspect = (float)w/h;
+   glMatrixMode(GL_PROJECTION);
+   glLoadIdentity( );
+   gluPerspective(abertura, aspect, znear, zfar);
+   glMatrixMode(GL_MODELVIEW);
+}
 
 int main(int argc, char** argv)
 {
@@ -121,16 +130,18 @@ int main(int argc, char** argv)
    glutIdleFunc(display);
    glutKeyboardFunc(keyboard);
    glutMotionFunc(MotionFunc);
+   glutReshapeFunc(reshape);
 
    init_gl();
-   shader1 = new Glsl("glsl_7_Toon\\src\\toon.vert", "glsl_7_Toon\\src\\toon.frag");
-   shader2 = new Glsl("glsl_7_Toon\\src\\toon2.vert", "glsl_7_Toon\\src\\toon2.frag");
+   shader1 = new Glsl("glsl_7_Toon/src/toon.vert", "glsl_7_Toon/src/toon.frag");
+   shader2 = new Glsl("glsl_7_Toon/src/toon2.vert", "glsl_7_Toon/src/toon2.frag");
 
    loc_u_light = shader1->getUniformLoc("lightSourcePos");
    loc_u_light = shader2->getUniformLoc("lightSourcePos");
    printf("%d ", loc_u_light);
 
    shader1->setActive(true);
+   glutFullScreen();
 
 
    glutMainLoop();
