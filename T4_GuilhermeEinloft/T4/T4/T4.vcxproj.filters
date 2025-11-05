@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="b_spline.cpp" />
+    <ClCompile Include="circle.cpp" />
+    <ClCompile Include="collision.cpp" />
+    <ClCompile Include="sp_hash.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="b_spline.fs" />
+    <None Include="b_spline.vs" />
+    <None Include="circle.fs" />
+    <None Include="circle.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="b_spline.h" />
+    <ClInclude Include="circle.h" />
+    <ClInclude Include="collision.h" />
+    <ClInclude Include="sp_hash.h" />
+  </ItemGroup>
+</Project>
