@@ -12,8 +12,8 @@
 #include "sp_hash.h"
 
 /* dimensões do grid */
-#define GRID_W 8
-#define GRID_H 8
+#define GRID_W 32
+#define GRID_H 32
 
 /* direção que o algoritmo de verificação de colisões do círculo vai checar */
 enum direction {

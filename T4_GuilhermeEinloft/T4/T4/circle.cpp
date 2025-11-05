@@ -5,6 +5,7 @@
 #include <glm/gtc/type_ptr.hpp>
 #include <math.h>
 #include <stdio.h>
+#include <chrono>
 
 #include "b_spline.h"
 #include "sp_hash.h"
@@ -23,6 +24,10 @@ float circ_verts[] = {
 };
 
 int circ_indices[] = {0, 1, 3, 1, 2, 3};
+
+static std::chrono::steady_clock sclock;
+static std::chrono::steady_clock::time_point time1, time2;
+static float deltaTime = 0.0f;
 
 /*
  * função auxiliar para ver se o círculo colide com a b-spline
@@ -44,10 +49,17 @@ bool circles_check_b_spline_collision(int i)
  */
 bool circles_check_all_collisions(int i)
 {
+	if (i == CIRC_NUM - 1)
+		time1 = std::chrono::steady_clock::now();
 	for (int j = 0; j < i; j++) {
 		if (collision_circle_circle(circles[i].center, CIRC_R,
 				circles[j].center, CIRC_R))
 			return 1;
+	}
+	if (i == CIRC_NUM - 1) {
+		time2 = std::chrono::steady_clock::now();
+		deltaTime = std::chrono::duration_cast<std::chrono::nanoseconds>(time2 - time1).count() / 1000.0f;
+		printf("COLISOES CIRCULO-CIRCULO: %f\n", deltaTime);
 	}
 	return 0;
 }
@@ -83,6 +95,8 @@ bool circles_check_hash_collisions(int i)
 	if (!(dir & 1))
 		init_y = -scale_y;
 
+	if (i == CIRC_NUM - 1)
+		time1 = std::chrono::steady_clock::now();
 	for (int x = init_x; x <= init_x + scale_x; x += scale_x) {
 		for (int y = init_y; y <= init_y + scale_y; y += scale_y) {
 			int index = hash_function(circles[i].center +
@@ -91,17 +105,11 @@ bool circles_check_hash_collisions(int i)
 				return 1;
 		}
 	}
-	/* versão anterior, que verificava as 8 células vizinhas */
-	/*
-	for (int x = -scale_x; x <= scale_x; x += scale_x) {
-		for (int y = -scale_y; y <= scale_y; y += scale_y) {
-			int index = hash_function(circles[i].center +
-					glm::vec3((float)x, (float)y, 0.0f));
-			if (circles_check_cell_collisions(i, index))
-				return 1;
-		}
+	if (i == CIRC_NUM - 1) {
+		time2 = std::chrono::steady_clock::now();
+		deltaTime = std::chrono::duration_cast<std::chrono::nanoseconds>(time2 - time1).count() / 1000.0f;
+		printf("COLISOES CIRCULO-CIRCULO: %f\n", deltaTime);
 	}
-	*/
 	return 0;
 }
 

@@ -51,7 +51,7 @@ void Glyph::readLayoutFile(const std::string& filepath, std::map<int, Glyph>& ou
 	std::string line;
 	while (std::getline(file, line)) {
 		Glyph glyph{};
-		sscanf_s(line.c_str(), "%d,%f,%f,%f,%f,%f,%f,%f,%f,%f",
+		sscanf(line.c_str(), "%d,%f,%f,%f,%f,%f,%f,%f,%f,%f",
 			&glyph.codepoint,
 			&glyph.advance,
 			&glyph.planeLeft,

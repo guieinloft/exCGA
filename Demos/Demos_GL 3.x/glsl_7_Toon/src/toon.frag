@@ -10,16 +10,9 @@ void main()
 	float intensity;
 	vec4 color;
 
-	intensity = max(dot(lightDir,normal),0.0); 
+	intensity = (clamp(max(dot(lightDir,normal),0.0), 0.4, 0.6) - 0.4) * 4.0 + 0.2; 
 
-	if (intensity > 0.98)
-		color = vec4(0.8,0.8,0.8,1.0);
-	else if (intensity > 0.5)
-		color = vec4(0.4,0.4,0.8,1.0);	
-	else if (intensity > 0.25)
-		color = vec4(0.2,0.2,0.4,1.0);
-	else
-		color = vec4(0.1,0.1,0.1,1.0);		
+	color = vec4(vec3(0.8, 0.4, 0.4) * intensity, 1.0);
 		
 	gl_FragColor = color;
 }

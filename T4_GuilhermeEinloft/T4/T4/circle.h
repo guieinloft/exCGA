@@ -10,7 +10,7 @@
 /* raio do círculo */
 #define CIRC_R 2.0f
 /* número máximo de círculos */
-#define CIRC_NUM 8192
+#define CIRC_NUM 16384
 
 /* struct que define o círculo */
 struct circle {

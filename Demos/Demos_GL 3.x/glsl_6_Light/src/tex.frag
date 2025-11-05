@@ -11,7 +11,7 @@ void main()
    //o vetor direcao deve ser normalizado apos a subtracao.
    vetDirLuz = normalize( luzPos - coord );
 
-   intensity = max(dot(normal,vetDirLuz),0.0);
+   intensity = (clamp(max(dot(normal,vetDirLuz),0.0), 0.4, 0.6) - 0.4) * 5.0;
 
    gl_FragColor = vec4(intensity,intensity,intensity,0);
 
